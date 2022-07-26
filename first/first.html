@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="first.css" />
+  </head>
+  <body>
+    <h1>First Page</h1>
+
+    <div id="productWrapper"></div>
+    <footer>
+      <script src="first.js"></script>
+    </footer>
+  </body>
+
+  <template id="productrow">
+    <div class="productCard">
+      <p id="value"></p>
+      <button id="button-action" class="redirectButton" onClick="redirect(this.id)">
+        Go To Product
+      </button>
+    </div>
+  </template>
+</html>
