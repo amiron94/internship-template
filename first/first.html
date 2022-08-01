@@ -6,15 +6,19 @@
   <body>
     <h1>First Page</h1>
 
-    <div id="productWrapper"></div>
+    <section id="productSection">
+      <div id="productWrapper"></div>
+    </section>
+    
     <footer>
       <script src="first.js"></script>
     </footer>
   </body>
 
-  <template id="productrow">
+  <template id="cardTemplate">
     <div class="productCard">
       <p id="value"></p>
+      <img id="image" src="https://dummyjson.com/image/i/products/2/3.jpg" >
       <button id="button-action" class="redirectButton" onClick="redirect(this.id)">
         Go To Product
       </button>

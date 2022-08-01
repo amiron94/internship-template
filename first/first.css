@@ -1,16 +1,29 @@
-#productWrapper {
-  display: flex;
-  flex-wrap: wrap;
+#productSection {
+  margin: 0 auto;
+  max-width: 850px;
 }
+
+#productWrapper {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+}
+
+img {
+  width: 100%;
+  height: calc(100% - 4rem);
+}
+
 .redirectButton {
     display: none;
 }
+
 .productCard:hover .redirectButton {
     display: block;
 }
 
 .productCard {
-  width: 150px;
+  width: 200px;
   height: 220px;
   border-radius: 8px;
   border: 3px solid grey;
